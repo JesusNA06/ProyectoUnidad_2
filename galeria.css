@@ -1,0 +1,91 @@
+/* Estilo general */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #ffe6f0, #ffffff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navbar */
+.navbar-logo {
+  width: 100%;
+  background-color: rosybrown;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 7px 50px rgba(0, 0, 0, 0.2);
+}
+
+.nav-list-logo {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-list-logo li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 8px 12px;
+  display: block;
+  transition: background-color 0.6s ease, color 0.4s;
+  border-radius: 4px;
+}
+
+.nav-list-logo li a:hover {
+  background-color: brown;
+  color: #fff;
+}
+
+.logo1 {
+  width: 10%;
+  height: 10%;
+  border-radius: 3px;
+}
+
+/* Galería vertical */
+.galeria-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  gap: 50px;
+}
+
+/* Imágenes */
+.card {
+  width: 60%;
+  max-width: 500px;
+  border-radius: 12px;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: zoomFade 1.2s ease-out forwards;
+}
+
+/* Delays escalonados */
+.anim1 { animation-delay: 0.5s; }
+.anim2 { animation-delay: 1.0s; }
+.anim3 { animation-delay: 1.5s; }
+.anim4 { animation-delay: 2.0s; }
+.anim5 { animation-delay: 2.5s; }
+.anim6 { animation-delay: 3.0s; }
+.anim7 { animation-delay: 3.5s; }
+.anim8 { animation-delay: 4.0s; }
+.anim9 { animation-delay: 4.5s; }
+
+/* Animación zoom + fade */
+@keyframes zoomFade {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
